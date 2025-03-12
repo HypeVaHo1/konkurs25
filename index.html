@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Герои нашего времени</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="assets/logo.png" alt="logo">
+        <h1>Герои нашего времени</h1>
+    </header>
+    <main>
+
+        <!-- Слайдер изображений -->
+        <div class="slider-container">
+            <div class="slider">
+                <div class="card">
+                    <div class="bg">
+                        <img src="assets/police.jpg" alt="Slider Image 1">
+                        <img src="assets/fire.webp"
+                            alt="Slider Image 2">
+                        <img src="assets/medic.jpg"
+                            alt="Slider Image 3">
+                        <img src="assets/military.jpg"
+                            alt="Slider Image 4">
+                            <h2>Настоящий герой — это не тот, кто в сияющих доспехах и в красивой позе. <br>Герой — тот, кто делает то, что нужно сделать</h2>
+                    </div>
+                    <div class="blob"></div>
+                </div>
+
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <section>
+            <h2 class="fade-in">Наши защитники и спасатели</h2>
+            <div class="grid-container">
+                <div class="hero-card fade-in">
+                    <img src="assets/police1.jpg" alt="Полиция">
+                    <h3>Полиция</h3>
+                    <p>Полиция — это символ порядка и безопасности. Они защищают нас от преступности и поддерживают
+                        законность.</p>
+                    <button class="more" onclick="openModal(0)">
+                        <span>
+                            <h2 class="more-text">Подробнее</h2>
+                        </span>
+                    </button>
+                </div>
+
+                <div class="hero-card fade-in">
+                    <img src="assets/fire1.webp" alt="Пожарные">
+                    <h3>Пожарные</h3>
+                    <p>Пожарные рискуют своей жизнью, чтобы спасти других. Они герои, которые сражаются с огнем и
+                        спасают людей в опасных ситуациях.</p>
+                    <button class="more" onclick="openModal(1)">
+                        <span>
+                            <h2 class="more-text">Подробнее</h2>
+                        </span>
+                    </button>
+                </div>
+
+                <div class="hero-card fade-in">
+                    <img src="assets/medic.webp"
+                        alt="Медики">
+                    <h3>Медицинская служба</h3>
+                    <p>Медики — это те, кто всегда рядом, когда нам нужна помощь. Они спасают жизни и помогают
+                        выздоравливать после травм.</p>
+                    <button class="more" onclick="openModal(2)">
+                        <span>
+                            <h2 class="more-text">Подробнее</h2>
+                        </span>
+                    </button>
+                </div>
+
+                <div class="hero-card fade-in">
+                    <img src="assets/military1.jpg" alt="Военные">
+                    <h3>Военные</h3>
+                    <p>Военные защищают страну, рискуя своими жизнями. Их отвага и преданность делу делают их настоящими
+                        героями.</p>
+                    <button class="more" onclick="openModal(3)">
+                        <span>
+                            <h2 class="more-text">Подробнее</h2>
+                        </span>
+                    </button>
+                </div>
+
+                <div class="hero-card fade-in">
+                    <img src="assets/people.webp"
+                        alt="Другие герои">
+                    <h3>Другие герои</h3>
+                    <p>В мире есть множество людей, которые ежедневно делают великие дела для других: спасатели,
+                        волонтеры, учителя и многие другие.</p>
+                    <button class="more" onclick="openModal(4)">
+                        <span>
+                            <h2 class="more-text">Подробнее</h2>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Модальное окно -->
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <h3 id="modal-title"></h3>
+                <img id="modal-image" src="" alt="Hero Image">
+                <p id="modal-description"></p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; Стукалин Иван Александрович </p>
+            <div class="container">
+            <a href="https://pu51.info"><img class="logo" src="assets/logo.png" alt=""></a>
+            <a href="https://vk.com/public217342369"><img class="logo" src="assets/vk.png" alt=""></a>
+            <a href="https://t.me/atk_kollege"><img class="logo" src="assets/logo.jpg" alt=""></a>
+            <a href="https://ok.ru/group/70000001961078"><img src="assets/oklogo.jpg" alt="" class="logo"></a>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
